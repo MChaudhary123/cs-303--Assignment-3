@@ -6,13 +6,13 @@ int main() {
     using std::cout;
     using std::vector;
 
-    // === Q1a: Instantiate Queue<int> and push 10 values ===
+    // Q1a: Instantiate Queue<int> and push 10 values
     Queue<int> q;
     for (int i = 1; i <= 10; ++i) {
         q.push(i * 10);  // Push 10, 20, ..., 100 into the queue
     }
 
-    // === Q1b: Display all queue elements using only push/pop/front/size ===
+    // Q1b: Display all queue elements using only push/pop/front/size
     cout << "Queue contents: ";
     size_t n = q.size();  // Store the initial size to avoid infinite loop
     for (size_t i = 0; i < n; ++i) {
@@ -22,7 +22,7 @@ int main() {
     }
     cout << "\n";
 
-    // === Q1c: Move front to rear and print new front ===
+    //  Q1c: Move front to rear and print new front 
     q.move_to_rear();  // Move current front element to the rear
     cout << "After move_to_rear(), new front: " << q.front() << "\n\n";
 
@@ -35,9 +35,9 @@ int main() {
     else
         cout << "Value " << target << " not found\n\n";
 
-    // === Q3: Sort linked list using insertion sort ===
+    //Q3: Sort linked list using insertion sort 
 
-    // Manually create an unsorted linked list: 4 -> 2 -> 5 -> 1 -> 3
+    // Manually created an unsorted linked list: 4 -> 2 -> 5 -> 1 -> 3
     Node* head = new Node(4);
     head->next = new Node(2);
     head->next->next = new Node(5);
