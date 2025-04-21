@@ -1,10 +1,7 @@
-// assignment.cpp
 #include "functions.h"
 #include <iostream>
 
-// =======================
-// --- Q1 Implementation ---
-// =======================
+// Question 1 
 
 // Constructor for Queue
 template<typename T>
@@ -77,9 +74,7 @@ void Queue<T>::move_to_rear() {
 template class Queue<int>;
 
 
-// =======================
-// --- Q2 Implementation ---
-// =======================
+// Question 2 
 
 // Recursive function to find last occurrence of `target` in `vec`
 // Starts searching from index `idx`
@@ -95,9 +90,7 @@ int last_linear_search(const std::vector<T>& vec, const T& target, int idx) {
 template int last_linear_search<int>(const std::vector<int>&, const int&, int);
 
 
-// =======================
-// --- Q3 Implementation ---
-// =======================
+// Question 3
 
 // Perform insertion sort on a singly linked list
 Node* insertion_sort(Node* head) {
