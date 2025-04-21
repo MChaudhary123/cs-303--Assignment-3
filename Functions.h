@@ -1,4 +1,4 @@
-﻿#pragma once  // Ensures the file is only included once during compilation
+﻿#pragma once
 
 #ifndef ASSIGNMENT_H
 #define ASSIGNMENT_H
@@ -6,9 +6,7 @@
 #include <vector>
 #include <iostream>
 
-// ==============================
 // Q1: Template Circular Queue
-// ==============================
 
 // Generic queue class implemented using a circular array
 template<typename T>
@@ -32,9 +30,7 @@ private:
     size_t capacity_;                // Current array capacity
 };
 
-// ==============================
 // Q2: Recursive Linear Search
-// ==============================
 
 // Recursively search for the last occurrence of target in vec
 // Returns index of last occurrence, or -1 if not found
@@ -42,9 +38,7 @@ template<typename T>
 int last_linear_search(const std::vector<T>& vec, const T& target, int idx = 0);
 
 
-// ==============================
 // Q3: Singly Linked List Node
-// ==============================
 
 // Basic node structure for singly linked list
 struct Node {
